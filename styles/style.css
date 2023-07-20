@@ -26,8 +26,18 @@ body {
   height:400px;
 
   /* default settings for game box */
-  overflow: hidden; /* this will prevent element from been visible outside the game box */
+  /*overflow: hidden; 
+  /* this will prevent element from been visible outside the game box */
   position: relative; /* this will allow elements to be positioned relative to the game-box */
   user-select: none; /* this will prevent elements from being highlighted */
 
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-size: cover;
+
+  /* si el fondon se fuese a mover, sería mejor añadirlo por medio de manipulacion de DOM*/
+}
+
+#game-screen, #gameover-screen {
+  display: none; /* los hace desaparecer temporalmente del DOM*/
 }
